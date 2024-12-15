@@ -59,7 +59,10 @@
                     wp_reset_postdata();
                     ?>					
 					<div style="margin: 1.5rem 0;">
-						<a href="#" style="font-weight: 500; text-decoration: none; ">SEE ALL 3 PROJECTS &rarr;</a>
+						<a href="#" style="font-weight: 500; text-decoration: none; ">SEE ALL <?php 
+			$published_projects = wp_count_posts('projects')->publish; 
+			echo $published_projects;  
+			?> PROJECTS &rarr;</a>
 					</div>
 				</section>
 				<section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
