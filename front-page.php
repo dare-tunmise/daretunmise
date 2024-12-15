@@ -7,7 +7,7 @@
 					<h2>WRITINGS</h2>
                     <?php
                     $homepagePosts = new WP_Query(array(
-                        'posts_per_page' => 10
+                        'posts_per_page' => 5
                     ));
 
                     while ($homepagePosts->have_posts()) {
@@ -25,43 +25,44 @@
 
 
 					<div style="margin: 1.5rem 0;">
-						<a href="<?php echo site_url('/writings'); ?>" style="font-weight: 500; text-decoration: none; ">READ ALL 9 WRITINGS &rarr;</a>
+						<a href="<?php echo site_url('/writings'); ?>" style="font-weight: 500; text-decoration: none; ">READ ALL <?php 
+            $published_posts = wp_count_posts()->publish; 
+            echo $published_posts; 
+?> WRITINGS &rarr;</a>
 					</div>
 				</section>
 				<section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
 					<h2>PROJECTS</h2>
-					<article>
-						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
-						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
-						<div style="margin: 1rem 0;">
-							<code><a href="#" style="text-decoration: none;">live demo &rarr;</a></code> <code><a href="#" style="text-decoration: none;">github <i class="icon brands style1 fa-github"></i></a></code>
-						</div>
-					</article>
-					<article>
-						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
-						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
-						<div style="margin: 1rem 0;">
-							<code><a href="#" style="text-decoration: none;">lIVE DEMO &rarr;</a></code> <code><a href="#" style="text-decoration: none;">GITHUB <i class="icon brands style1 fa-github"></i></a></code>
-						</div>
-					</article>
-					<article>
-						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
-						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
-						<div style="margin: 1rem 0;">
-							<code><a href="#" style="text-decoration: none;">live demo &rarr;</a></code> <code><a href="#" style="text-decoration: none;">github <i class="icon brands style1 fa-github"></i></a></code>
-						</div>
-					</article>
-					<article>
-						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
-						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
-						<div style="margin: 1rem 0;">
-							<code><a href="#" style="text-decoration: none;">live demo &rarr;</a></code> <code><a href="#" style="text-decoration: none;">github <i class="icon brands style1 fa-github"></i></a></code>
-						</div>
-					</article>
+                    <?php
+                    $homepagePosts = new WP_Query(array(
+                        'posts_per_page' => 5,
+                        'post_type' => 'projects'
+                    ));
 
-					
+                    while ($homepagePosts->have_posts()) {
+                        $homepagePosts->the_post(); ?>
+
+					<article>
+						<h3><?php echo get_field('title'); ?></h3>
+						<p style="margin: 0 0 .5rem 0;"><?php echo get_field('info'); ?></p>
+						<div style="margin: 1rem 0;">
+                                <?php if(!empty(get_field('demo_url'))) { ?>
+                                <code><a href="<?php echo get_field('demo_url'); ?>" style="text-decoration: none;">LIVE DEMO &rarr;</a></code> 
+                                <?php } ?> 
+                                
+                                <?php if(!empty(get_field('github_url'))) { ?>
+                                <code><a href="<?php echo get_field('github_url'); ?>" style="text-decoration: none;">GITHUB <i class="icon brands style1 fa-github"></i></a></code>
+                                <?php } ?> 
+                            </div>
+					</article>
+                    <?php }
+                    wp_reset_postdata();
+                    ?>					
 					<div style="margin: 1.5rem 0;">
-						<a href="#" style="font-weight: 500; text-decoration: none; ">SEE ALL 3 PROJECTS &rarr;</a>
+						<a href="#" style="font-weight: 500; text-decoration: none; ">SEE ALL <?php 
+			$published_projects = wp_count_posts('projects')->publish; 
+			echo $published_projects;  
+			?> PROJECTS &rarr;</a>
 					</div>
 				</section>
 				<section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
