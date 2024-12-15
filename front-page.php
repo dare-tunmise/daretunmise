@@ -22,21 +22,7 @@
                                 <?php }
                     wp_reset_postdata();
                     ?>
-					<!-- <article>
-						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
-						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
-						<p style="color: rgba(0, 0, 0, 0.75); font-style: italic;">December 20, 2023</p>
-					</article>
-					<article>
-						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
-						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
-						<p style="color: rgba(0, 0, 0, 0.75); font-style: italic;">December 20, 2023</p>
-					</article>
-					<article>
-						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
-						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
-						<p style="color: rgba(0, 0, 0, 0.75); font-style: italic;">December 20, 2023</p>
-					</article> -->
+
 
 					<div style="margin: 1.5rem 0;">
 						<a href="#" style="font-weight: 500; text-decoration: none; ">READ ALL 9 WRITINGS &rarr;</a>

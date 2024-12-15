@@ -14,7 +14,7 @@
 			<div id="wrapper" class="divided">
 
 				<nav style="margin: 0 auto 1rem auto; width: 100%; max-width: 900px; padding: 1.5rem; align-items: center; justify-content: center;">
-					<h1><?php
+					<h1 style="margin-bottom: 1.5rem;"><?php
                             if (is_front_page()) {
                                 $title = "dare tunmise";
                             } else {
