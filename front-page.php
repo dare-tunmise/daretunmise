@@ -1,0 +1,81 @@
+<?php get_header() ?>
+				
+                <section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; border: none; padding: 1.5rem; align-items: center; justify-content: center;">
+					<p>I am a writer and a software developer with a special interest in building scalable backend systems. I have a strong foundation in JavaScript and experience in frameworks like Node.js and Express and sometimes, I write PHP. I enjoy developing impactful web applications that solve real-world problems.</p>		
+				</section>
+				<section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
+					<h2>WRITINGS</h2>
+					<article>
+						<a href="#" style="text-decoration: none;">
+							<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						</a>
+						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
+						<p style="color: rgba(0, 0, 0, 0.75); font-style: italic;">December 20, 2023</p>
+					</article>
+					<article>
+						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
+						<p style="color: rgba(0, 0, 0, 0.75); font-style: italic;">December 20, 2023</p>
+					</article>
+					<article>
+						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
+						<p style="color: rgba(0, 0, 0, 0.75); font-style: italic;">December 20, 2023</p>
+					</article>
+					<article>
+						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
+						<p style="color: rgba(0, 0, 0, 0.75); font-style: italic;">December 20, 2023</p>
+					</article>
+
+					<div style="margin: 1.5rem 0;">
+						<a href="#" style="font-weight: 500; text-decoration: none; ">READ ALL 9 WRITINGS &rarr;</a>
+					</div>
+				</section>
+				<section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
+					<h2>PROJECTS</h2>
+					<article>
+						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
+						<div style="margin: 1rem 0;">
+							<code><a href="#" style="text-decoration: none;">live demo &rarr;</a></code> <code><a href="#" style="text-decoration: none;">github <i class="icon brands style1 fa-github"></i></a></code>
+						</div>
+					</article>
+					<article>
+						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
+						<div style="margin: 1rem 0;">
+							<code><a href="#" style="text-decoration: none;">lIVE DEMO &rarr;</a></code> <code><a href="#" style="text-decoration: none;">GITHUB <i class="icon brands style1 fa-github"></i></a></code>
+						</div>
+					</article>
+					<article>
+						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
+						<div style="margin: 1rem 0;">
+							<code><a href="#" style="text-decoration: none;">live demo &rarr;</a></code> <code><a href="#" style="text-decoration: none;">github <i class="icon brands style1 fa-github"></i></a></code>
+						</div>
+					</article>
+					<article>
+						<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
+						<div style="margin: 1rem 0;">
+							<code><a href="#" style="text-decoration: none;">live demo &rarr;</a></code> <code><a href="#" style="text-decoration: none;">github <i class="icon brands style1 fa-github"></i></a></code>
+						</div>
+					</article>
+
+					
+					<div style="margin: 1.5rem 0;">
+						<a href="#" style="font-weight: 500; text-decoration: none; ">SEE ALL 3 PROJECTS &rarr;</a>
+					</div>
+				</section>
+				<section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
+					<h2>BOOK</h2>
+					<article>
+						<a href="#" style="text-decoration: none;">
+							<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						</a>
+						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
+						<p style="color: rgba(0, 0, 0, 0.75); font-style: italic;">December 20, 2023</p>
+					</article>
+				</section>
+<?php get_footer() ?>
