@@ -23,64 +23,64 @@
                             ?>
                    <?= $title ?>
                    </h1>
-                    <div>
-                        <a href="#" style="text-decoration: none;">WRITINGS</a>
-                        <a href="#" style="text-decoration: none; margin-left: 1.5rem;">PROJECTS</a>
-                        <a href="#" style="text-decoration: none; margin-left: 1.5rem;">BOOK</a>
-                    </div>
-
-				</nav>
+                    <!-- <div>
+                        <a href="<?php echo site_url('/blog'); ?>" style="text-decoration: none;">WRITINGS</a>
+                        <a href="<?php echo site_url('/projects'); ?>" style="text-decoration: none; margin-left: 1.5rem;">PROJECTS</a>
+                        <a href="<?php echo site_url('/books'); ?>" style="text-decoration: none; margin-left: 1.5rem;">BOOK</a>
+                    </div> -->
 
 
-
-                <?php
-// Add this to your header.php or where your navigation is rendered
-
-// Function to display custom menu items based on page
+                    <?php  
 function display_custom_menu() {
     if (is_front_page()) {
-        // Display "Writings" and "Projects" on homepage
+
         ?>
-        <nav>
-            <ul>
-                <li><a href="<?php echo site_url('/blog'); ?>">Writings</a></li>
-                <li><a href="<?php echo site_url('/projects'); ?>">Projects</a></li>
-            </ul>
-        </nav>
+            <div>
+                <a href="<?php echo site_url('/blog'); ?>" style="text-decoration: none;">WRITINGS</a>
+                <a href="<?php echo site_url('/projects'); ?>" style="text-decoration: none; margin-left: 1.5rem;">PROJECTS</a>
+                <a href="<?php echo site_url('/books'); ?>" style="text-decoration: none; margin-left: 1.5rem;">BOOK</a>
+            </div>
         <?php
     } elseif (is_home() || is_singular('post')) {
-        // Display "Home" and "Projects" on blog page and single blog posts
         ?>
-        <nav>
-            <ul>
-                <li><a href="<?php echo site_url(); ?>">&#8592 Home</a></li>
-                <li><a href="<?php echo site_url('/projects'); ?>">Projects</a></li>
-            </ul>
-        </nav>
+        <div>
+            <a href="<?php echo site_url(); ?>" style="text-decoration: none;">&#8592 HOME</a>
+            <a href="<?php echo site_url('/projects'); ?>" style="text-decoration: none; margin-left: 1.5rem;">PROJECTS</a>
+            <a href="<?php echo site_url('/books'); ?>" style="text-decoration: none; margin-left: 1.5rem;">BOOK</a>
+        </div>
         <?php
     } elseif (is_page('projects')) {
-        // Display "Home" and "Writings" on custom projects page
         ?>
-        <nav>
-            <ul>
-                <li><a href="<?php echo site_url(); ?>">&#8592 Home</a></li>
-                <li><a href="<?php echo site_url('/blog'); ?>">Writings</a></li>
-            </ul>
-        </nav>
+        <div>
+            <a href="<?php echo site_url(); ?>" style="text-decoration: none;">&#8592 HOME</a>
+            <a href="<?php echo site_url('/blog'); ?>" style="text-decoration: none; margin-left: 1.5rem;">WRITINGS</a>
+            <a href="<?php echo site_url('/books'); ?>" style="text-decoration: none; margin-left: 1.5rem;">BOOK</a>
+        </div>
         <?php
-    } else {
-        // Default menu (optional)
+    } elseif (is_page('books')) {
+
         ?>
-        <nav>
-            <ul>
-                <li><a href="<?php echo site_url(); ?>">&#8592 Home</a></li>
-                <li><a href="<?php echo site_url('/blog'); ?>">Writings</a></li>
-            </ul>
-        </nav>
+        <div>
+            <a href="<?php echo site_url(); ?>" style="text-decoration: none;">&#8592 HOME</a>
+            <a href="<?php echo site_url('/blog'); ?>" style="text-decoration: none; margin-left: 1.5rem;">WRITINGS</a>
+            <a href="<?php echo site_url('/projects'); ?>" style="text-decoration: none; margin-left: 1.5rem;">PROJECTS</a>
+        </div>
+        <?php } else {
+        ?>
+        <div>
+            <a href="<?php echo site_url(); ?>" style="text-decoration: none;">&#8592 HOME</a>
+            <a href="<?php echo site_url('/blog'); ?>" style="text-decoration: none; margin-left: 1.5rem;">WRITINGS</a>
+            <a href="<?php echo site_url('/books'); ?>" style="text-decoration: none; margin-left: 1.5rem;">BOOK</a>
+        </div>
         <?php
     }
 }
 
-// Call the function to display the menu
 display_custom_menu();
-?>
+?>                   
+                    
+				</nav>
+
+
+
+
