@@ -1,7 +1,7 @@
 <?php 
     get_header(); ?>
-<section class="contents">
-    <div class="thoughts">
+    <section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
+    <div>
         <?php 
         $current_year = '';
         
@@ -19,8 +19,11 @@
             }
         ?>
             <article>
-                <div class="title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></div>
-                <span class="date"><?php the_date(); ?></span>
+                <a href="<?php the_permalink(); ?>" style="text-decoration: none;">
+                <h3><?php the_title(); ?></h3>
+                </a>
+                <p style="margin: 0 0 .5rem 0;"><?php echo wp_trim_words(get_the_content(), 24);  ?></p>
+                <p style="color: rgba(0, 0, 0, 0.75); font-style: italic;"><?php the_date(); ?></p>
             </article>
         <?php 
         } 

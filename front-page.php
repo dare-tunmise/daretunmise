@@ -1,8 +1,8 @@
 <?php get_header() ?>
 				
-                <section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; border: none; padding: 1.5rem; align-items: center; justify-content: center;">
+                <!-- <section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; border: none; padding: 1.5rem; align-items: center; justify-content: center;">
 					<p>I am a writer and a software developer with a special interest in building scalable backend systems. I have a strong foundation in JavaScript and experience in frameworks like Node.js and Express and sometimes, I write PHP. I enjoy developing impactful web applications that solve real-world problems.</p>		
-				</section>
+				</section> -->
 				<section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
 					<h2>WRITINGS</h2>
                     <?php
@@ -16,7 +16,7 @@
                                     <a href="<?php the_permalink(); ?>" style="text-decoration: none;">
                                         <h3><?php the_title(); ?></h3>
                                     </a>
-                                    <p style="margin: 0 0 .5rem 0;"><?php the_excerpt(); ?></p>
+                                    <p style="margin: 0 0 .5rem 0;"><?php echo wp_trim_words(get_the_content(), 24);  ?></p>
                                     <p style="color: rgba(0, 0, 0, 0.75); font-style: italic;"><?php the_date(); ?></p>
                                 </article>
                                 <?php }
@@ -25,7 +25,7 @@
 
 
 					<div style="margin: 1.5rem 0;">
-						<a href="#" style="font-weight: 500; text-decoration: none; ">READ ALL 9 WRITINGS &rarr;</a>
+						<a href="<?php echo site_url('/writings'); ?>" style="font-weight: 500; text-decoration: none; ">READ ALL 9 WRITINGS &rarr;</a>
 					</div>
 				</section>
 				<section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">

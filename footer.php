@@ -8,7 +8,7 @@
 								<li><a href="#" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; 2024 DARE TUNMISE. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p>&copy; 2024 dare tunmise. all rights reserved</p>
 						</div>
 				</footer>
 			</div>
