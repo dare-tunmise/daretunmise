@@ -98,7 +98,7 @@ function display_custom_menu() {
 display_custom_menu();
 ?>                   
 <?php if(is_front_page()) { ?>
-    <p style="margin-top: 1.5rem;">I am a writer and a software developer with a special interest in building scalable backend systems. I have a strong foundation in JavaScript and experience in frameworks like Node.js and Express and sometimes, I write PHP. I enjoy developing impactful web applications that solve real-world problems.</p>
+    <p style="margin-top: 1.5rem;">I am a writer and software developer with a focus on building scalable backend systems. I have a strong foundation in JavaScript and experience with frameworks like Node.js and Express, along with occasional work in PHP. I love experimenting with code and exploring new technologies, often driven by the (sometimes deluded) hope of discovering an epiphany that could shift the equation forward. Outside of coding, I write prose and poetry that explore themes of memory and identity. My most recent project is a poetry chapbook published by the African Poetry Book Fund and Akashic Books in Brooklyn, New York.</p>
 <?php } ?>             
 				</nav>
 
