@@ -1,13 +1,32 @@
 <!DOCTYPE HTML>
 <html translate="no">
-	<head>
-        <?php wp_head(); ?>
-		<title>Story by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+<head>
+    <?php wp_head(); ?>
+    <meta charset="UTF-8" />
+	<title>Dare Tunmise</title>
+	<meta property="og:title" content="Dare Tunmise" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="<?php if(is_page('home')) { echo "Dare Tunmise—Writer || Software Engineer"; } else { echo get_the_title();}; ?>" />
+	<meta property="og:url" content="https://www.daretunmise.com/" />
+	<meta property="og:image" content="<?php echo get_theme_file_uri('/android-chrome-512x512.png'); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dare Tunmise—Writer || Software Engineer">
+    <meta name="keywords" content="Writer, Poet, Software Engineer">
+    <meta name="author" content="Dare Tunmise">
+    <meta name="twitter:site" content="@Dare_Tunmise">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@Dare_Tunmise">
+	<meta name="twitter:image:src" content="<?php echo get_theme_file_uri('/android-chrome-512x512.png'); ?>">
+	<link rel="icon" type="image/x-icon" href="<?php echo get_theme_file_uri('/favicon.ico'); ?>">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_theme_file_uri('/apple-touch-icon.png'); ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_theme_file_uri('/favicon-32x32.png'); ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_theme_file_uri('/favicon-16x16.png'); ?>">
+    <link rel="manifest" href="<?php echo get_theme_file_uri('/site.webmanifest'); ?>">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Dare Tunmise</title>
+</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->

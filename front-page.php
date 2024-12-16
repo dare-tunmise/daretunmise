@@ -59,20 +59,32 @@
                     wp_reset_postdata();
                     ?>					
 					<div style="margin: 1.5rem 0;">
-						<a href="#" style="font-weight: 500; text-decoration: none; ">SEE ALL <?php 
+						<a href="?php echo site_url('/projects'); ?>" style="font-weight: 500; text-decoration: none; ">SEE ALL <?php 
 			$published_projects = wp_count_posts('projects')->publish; 
 			echo $published_projects;  
 			?> PROJECTS &rarr;</a>
 					</div>
 				</section>
+
 				<section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
 					<h2>BOOK</h2>
-					<article>
-						<a href="#" style="text-decoration: none;">
-							<h3>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
-						</a>
-						<p style="margin: 0 0 .5rem 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque minima totam architecto eligendi odio inventore reprehenderit, enim commodi, magnam explicabo autem rem nulla consequatur.</p>
-						<p style="color: rgba(0, 0, 0, 0.75); font-style: italic;">December 20, 2023</p>
-					</article>
+                    <?php
+                    $homepagePosts = new WP_Query(array(
+                        'posts_per_page' => 5,
+                        'post_type' => 'books'
+                    ));
+
+                    while ($homepagePosts->have_posts()) {
+                        $homepagePosts->the_post(); ?>
+                        <article>
+                            <a href="<?php the_permalink(); ?>" style="text-decoration: none;">
+                                <h3><?php echo get_field('book_title'); ?></h3>
+                            </a>
+                            <p style="margin: 0 0 .5rem 0;"><?php echo wp_trim_words(get_the_content(), 40);  ?></p>
+                            <p style="color: rgba(0, 0, 0, 0.75); font-style: italic;"><?php echo the_date();  ?></p>
+                        </article>
+                    <?php }
+                    wp_reset_postdata();
+                    ?>	
 				</section>
 <?php get_footer() ?>

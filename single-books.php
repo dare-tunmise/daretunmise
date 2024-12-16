@@ -1,14 +1,14 @@
 <?php
-get_header(); ?>
+
+get_header();
 
 
-<section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
-    <div>
-        <?php
-        while (have_posts()) {
-            the_post();  ?>
 
-                        <article>
+while (have_posts()) {
+  the_post() ?>
+
+  <section class="inner" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; align-items: center; justify-content: center;">
+  <article>
                             <a href="<?php the_permalink(); ?>" style="text-decoration: none;">
                                 <h3><?php echo get_field('book_title'); ?></h3>
                             </a>
@@ -18,15 +18,14 @@ get_header(); ?>
                             <p style="margin: 0 0 .5rem 0;">Publisher: African Poetry Book Fund X Akashic Books, Brooklyn, New York</p>
                             <p style="margin: 0 0 .5rem 0;"><?php the_content()  ?></p>
                         </article>
-        <?php }
 
-        echo paginate_links();
+  </section>
 
-        ?>
-
-    </div>
-</section>
+<?php }
 
 
-<?php 
-get_footer(); ?>
+
+
+get_footer();
+
+?>
