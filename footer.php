@@ -8,7 +8,7 @@
 								<li><a href="https://www.linkedin.com/in/dare-tunmise-47524519a/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="mailto:hello@daretunmise.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; 2024 dare tunmise. all rights reserved</p>
+							<p>&copy; <?php echo date("Y"); ?> dare tunmise. all rights reserved</p>
 						</div>
 				</footer>
 			</div>
